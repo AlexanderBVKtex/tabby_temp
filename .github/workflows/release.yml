@@ -179,7 +179,7 @@ jobs:
             target: aarch64-apple-darwin
             binary: aarch64-apple-darwin
             build_args: --no-default-features --features prod
-          - os: buildjet-2vcpu-ubuntu-2204
+          - os: ubuntu-22.04
             target: x86_64-unknown-linux-gnu
             binary: x86_64-manylinux_2_28
             container: quay.io/pypa/manylinux_2_28_x86_64
