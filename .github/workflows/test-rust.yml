@@ -75,10 +75,3 @@ jobs:
           CI_COVERAGE: 1
         run: cargo llvm-cov --bin tabby --lib --lcov --output-path lcov.info
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
-        env:
-           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        with:
-          files: lcov.info
-          fail_ci_if_error: true
